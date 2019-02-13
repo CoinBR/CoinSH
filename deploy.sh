@@ -1,3 +1,5 @@
+localPath=$PWD
+
 sudo echo "Lets pack the project before deploying it..."
 
 cd $localPath &&
