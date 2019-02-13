@@ -1,8 +1,9 @@
 # physh
+
 Run shell commands with this thin wrapper around the Python subprocess module
 
+### [](https://github.com/CoinBR/physh/blob/master/README.md#some-info-for-me)Refences (for me):
+I followed these tutorials to:
+ - Create a Package:   https://python-packaging.readthedocs.io/en/latest/minimal.html
+- Publish do pip: https://python-packaging.readthedocs.io/en/latest/minimal.html
 
-###### some info for me
-I followed these tutorials
-	* create a package: https://python-packaging.readthedocs.io/en/latest/minimal.html
-	* publish to pip: https://dzone.com/articles/executable-package-pip-install
