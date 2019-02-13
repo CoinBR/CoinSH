@@ -3,7 +3,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
     name='physh',  
-    version='0.0.1',
+    version='0.1.0',
     # scripts=['physh'] ,
     # packages=['physh'],
     author="Pedro 'Coin' Duarte",

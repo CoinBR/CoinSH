@@ -4,4 +4,5 @@ sudo echo "Lets pack the project before deploying it..."
 
 cd $localPath &&
 bash ./pack.sh &&
-sudo python3 -m twine upload dist/*
+packageToUpload="$(ls -rt dist/ | tail -1)"
+sudo python3 -m twine upload dist/$packageToUpload

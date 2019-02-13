@@ -17,10 +17,14 @@ class sh:
                             stderr=subprocess.PIPE,
                             universal_newlines=True)
 
-        self.out = sp.stdout
+        self.stdout = sp.stdout
         self.error = sp.stderr
         self._returncode = sp.returncode
+        self.out = self.stdout if self else self.error
 
     # check if the command finished succesfully
     def __bool__(self):
         return (True if self._returncode == 0 else False)
+
+    def __str__(self):
+        return self.out
