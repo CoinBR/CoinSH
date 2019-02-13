@@ -28,3 +28,12 @@ class sh:
 
     def __str__(self):
         return self.out
+
+    def __eq__(self, obj):
+        if not isinstance(obj, str):
+            return raise AttributeError("'sh' can only be compared " 
+                                        "to strings. It compares "
+                                        "the shell output with "
+                                        "the string passed."
+                                        )
+        return self.out == str

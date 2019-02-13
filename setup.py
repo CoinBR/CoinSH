@@ -1,9 +1,11 @@
 import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
+with open("version.txt", "r") as fh:
+    version = fh.read()
 setuptools.setup(
     name='physh',  
-    version='0.1.0',
+    version=version,
     # scripts=['physh'] ,
     # packages=['physh'],
     author="Pedro 'Coin' Duarte",
